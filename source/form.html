@@ -42,12 +42,12 @@
         <h3 class="reviews__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h3>
         <p  class="reviews__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ СВОЙ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
       </section>
-      <section class="page-main__form form">
+      <section class="page-main__form">
         <h2 class="visually-hidden">Ваши данные</h2>
         <form class="form" action="https://echo.htmlacademy.ru/">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">ПРЕДСТАВЬТЕСЬ:</legend>
-            <div class="field">
+          <fieldset class="form__fieldset fieldset">
+            <legend class="fieldset__legend">ПРЕДСТАВЬТЕСЬ:</legend>
+            <div class="form__field field">
               <label class="field__text">ИМЯ*:</label>
               <input class="form__input" type="text" placeholder="Петр" required>
               <label class="field__text">ФАМИЛИЯ*:</label>
@@ -56,8 +56,8 @@
               <input class="form__input" type="text" placeholder="Александрович" required>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+          <fieldset class="form__fieldset fieldset">
+            <legend class="fieldset__legend">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
             <div class="form__field field">
               <label class="field__text">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
               <input class="form__input" type="text" placeholder="Введите телефон" required>
@@ -133,7 +133,9 @@
           <fieldset class="form__fieldset fieldset">
             <legend class="fieldset__legend">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
             <textarea name="comment" class="fieldset__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-            <button type="submit" class="form__submit-button" value="ОТПРАВИТЬ ОТЗЫВ"></button>
+            <button type="submit" class="form__submit-button">
+              <p class="fieldset__text">ОТПРАВИТЬ ОТЗЫВ</p>
+            </button>
           </fieldset>
         </form>
       </section>

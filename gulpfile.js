@@ -23,7 +23,8 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'source',
+      index : 'form.html'
     },
     cors: true,
     notify: false,

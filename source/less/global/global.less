@@ -1,11 +1,9 @@
 //Globals
 body {
   background-color: #e7e5e5;
-}
-
-.greeting__img {
-  background-image: url("/img/back.jpg");
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 li {
@@ -13,30 +11,7 @@ li {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
-.main-nav__toggle {
-  background-image: url("/img/intro-triangle.svg");
-  background-repeat: no-repeat;
-  width: 23px;
-  height: 23px;
-}
-
-//Components
-.dignities__list li:nth-child(1),
-.dignities__list li:nth-child(2),
-.search__link,
-.social__item {
-  background-color: #81b3d2;
-}
-
-.dignities__list li:nth-child(3),
-.dignities__list li:nth-child(4),
-.dignities__list li:nth-child(5) {
-  background-color: #eeeeee;
-}
-
-.diginities-extra-list li:nth-child(n) {
-  background-color: #ffffff;
-}

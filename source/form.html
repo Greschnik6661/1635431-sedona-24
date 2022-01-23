@@ -51,15 +51,15 @@
             <ul class="field-list">
               <li class="field-list__item field">
                 <label class="field__text">ИМЯ*:</label>
-                <input class="form__input name" type="text" placeholder="Петр" required>
+                <input class="form__input form__input--text form__input--text--field" type="text" placeholder="Петр" required>
               </li>
               <li class="field-list__item field">
                 <label class="field__text">ФАМИЛИЯ*:</label>
-                <input class="form__input" type="text" placeholder="Иванов" required>
+                <input class="form__input form__input--text" type="text" placeholder="Иванов" required>
               </li>
               <li class="field-list__item field">
                 <label class="field__text">ОТЧЕСТВО*:</label>
-                <input class="form__input" type="text" placeholder="Александрович" required>
+                <input class="form__input form__input--text" type="text" placeholder="Александрович" required>
               </li>
             </ul>
           </fieldset>
@@ -69,8 +69,8 @@
               <li class="field-list__item field field--contacts">
                 <label class="field__text">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
                 <div class="field__input">
-                  <input class="form__input" type="text" placeholder="Введите телефон" required>
-                  <button class="button button-phone">
+                  <input class="form__input form__input--text" type="text" placeholder="Введите телефон" required>
+                  <button class="button button--phone">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" fill="#010101"/>
                     </svg>
@@ -80,8 +80,8 @@
               <li class="field-list__item field field--contacts">
                 <label class="field__text">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
                 <div class="field__input">
-                  <input class="form__input" type="text" placeholder="Введите e-mail" required>
-                  <button class="button button-mail">
+                  <input class="form__input form__input--text" type="text" placeholder="Введите e--mail" required>
+                  <button class="button button--mail">
                     <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
                     </svg>
@@ -152,7 +152,9 @@
           <fieldset class="form__fieldset fieldset fieldset--column">
             <legend class="form__legend">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
             <textarea name="comment" class="fieldset__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-            <button type="submit" class="form__submit-button" value="ОТПРАВИТЬ ОТЗЫВ"></button>
+            <button type="submit" class="form__fieldset form__fieldset--submit--button" value="ОТПРАВИТЬ ОТЗЫВ">
+              <span class="form__fieldset form__fieldset--submit--button--text">ОТПРАВИТЬ ОТЗЫВ</span>
+            </button>
           </fieldset>
         </form>
       </section>

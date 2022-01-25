@@ -1,4 +1,26 @@
 .greeting__img {
-  background-image: url("/img/back.jpg");
+  width: 282px;
+  height: 214px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.greeting__vector {
+  background-image: url("/img/intro-triangle.svg");
   background-repeat: no-repeat;
+  height: 57px;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: -119px;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/intro-triangle-groose.svg");
+    bottom: -357px;
+    height: 44px;
+  }
 }

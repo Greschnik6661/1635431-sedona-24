@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="/css/style.css" rel="stylesheet">
   </head>
@@ -36,7 +37,8 @@
       <h1 class="visually-hidden">О городе Седона</h1>
       <section class="page-main__greeting greeting">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="greeting__img" src="img/text-index.svg" width="280" height="215" alt="Добро пожаловать в Седону">
+        <img class="greeting__img" src="img/text-index.svg" width="" h alt="Добро пожаловать в Седону">
+        <div class="greeting__vector"></div>
       </section>
       <section class="page-main__about-the-city about-the-city">
         <h2 class="visually-hidden">О городе</h2>
@@ -46,21 +48,27 @@
       <section class="page-main__dignities dignities">
         <h2 class="visually-hidden">Достоинства</h2>
         <ul class="dignities__list">
-          <li class="dignities__item dignities__item--blue dignities__item--vector">
+          <li class="dignities__item dignities__item--blue">
+            <div class="dignities__vector"></div>
             <h3  class="dignities__title dignities__title--white">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="dignities__text dignities__text--white">№1
+            <p class="dignities__text dignities__text--white">&mdash; №1 &mdash;
             <br>СЕДОНА НЕ АТТРАКЦИОН ДЛЯТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            <img class="dignities__img" src="img/photo-city@1x1.jpg" alt="Фото города">
+            <div class="dignities__img--section">
+              <img class="dignities__img" src="img/photo-city@1x1.jpg" alt="Фото города">
+            </div>
             <ul class="dignities-extra-list diginities dignities-extra-list--white">
               <li class="dignities__item dignities__item--section">
+                <img class="dignities__icon dignities__icon--house" src="img/icon-house.svg" alt="дом">
                 <h3 class="dignities__title dignities__title--black">ЖИЛЬЁ</h3>
                 <p class="dignities__text dignities__text--black">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
               </li>
               <li class="dignities__item dignities__item--section">
+                <img class="dignities__icon dignities__icon--gift" src="img/icon-gift.svg" alt="подарок">
                 <h3 class="dignities__title dignities__title--black">СУВЕНИРЫ</h3>
                 <p class="dignities__text dignities__text--black">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
               </li>
               <li class="dignities__item dignities__item--section">
+                <img class="dignities__icon dignities__icon--burger" src="img/icon-burger.svg" alt="бургер">
                 <h3  class="dignities__title dignities__title--black">ЕДА</h3>
                 <p class="dignities__text dignities__text--black">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
               </li>
@@ -68,25 +76,27 @@
           </li>
           <li class="dignities__item dignities__item--blue">
             <h3 class="dignities__title dignities__title--white">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-            <p class="dignities__text dignities__text--white">№2
+            <p class="dignities__text dignities__text--white">&mdash; №2 &mdash;
             <br>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
             <img class="dignities__img" src="img/photo-bridge@1x1.jpg" alt="Фото моста дьявола">
           </li>
-          <li class="dignities__item dignities__item--gray">
-            <h3 class="dignities__title dignities__title--black">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p class="dignities__text dignities__text--black">№3
-            <br>ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
-          </li>
-          <li class="dignities__item dignities__item--gray">
-            <h3 class="dignities__title dignities__title--black">КРАСИВАЯ ДОРОГА</h3>
-            <p class="dignities__text dignities__text--black">№4
-            <br>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
-          </li>
-          <li class="dignities__item dignities__item--gray">
-            <h3 class="dignities__title dignities__title--black">МАЛО ТУРИСТОВ</h3>
-            <p class="dignities__text dignities__text--black">№5
-            <br>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
-          </li>
+          <div class="dignities__item dignities__item--gray">
+            <li class="dignities__item">
+              <h3 class="dignities__title dignities__title--black">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+              <p class="dignities__text dignities__text--black">&mdash; №3 &mdash;
+              <br>ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+            </li>
+            <li class="dignities__item">
+              <h3 class="dignities__title dignities__title--black">КРАСИВАЯ ДОРОГА</h3>
+              <p class="dignities__text dignities__text--black">&mdash; №4 &mdash;
+              <br>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+            </li>
+            <li class="dignities__item">
+              <h3 class="dignities__title dignities__title--black">МАЛО ТУРИСТОВ</h3>
+              <p class="dignities__text dignities__text--black">&mdash; №5 &mdash;
+              <br>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="page-main__search search">

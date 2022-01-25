@@ -24,7 +24,7 @@ const server = (done) => {
   browser.init({
     server: {
       baseDir: 'source',
-      index : "form.html",
+      // index : "form.html",
       // index : "catalog.html",
     },
     cors: true,

@@ -1,18 +1,12 @@
 .dignities-extra-list--white {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 330px;
+    text-align: center;
+    padding: 0;
+  }
 }
 
-.dignities-extra-list li:nth-child(1) {
-  background-image: url("/img/icon-house.svg");
-  background-repeat: no-repeat;
-}
-
-.dignities-extra-list li:nth-child(2) {
-  background-image: url("/img/icon-gift.svg");
-  background-repeat: no-repeat;
-}
-
-.dignities-extra-list li:nth-child(3) {
-  background-image: url("/img/icon-burger.svg");
-  background-repeat: no-repeat;
-}

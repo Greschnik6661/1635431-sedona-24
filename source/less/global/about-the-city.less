@@ -5,6 +5,9 @@
   text-align: center;
   color: #333333;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 11px;
+  padding-top: 45px;
 }
 
 .about-the-city__title {
@@ -14,4 +17,27 @@
   text-align: center;
   color: #333333;
   font-weight: bold;
+  margin: 0;
+  padding-top: 32px;
+  width: 298px;
+
+  @media (min-width: @tablet-width) {
+    width: 562px;
+  }
+}
+
+.about-the-city {
+  background-color: #ffffff;
+  margin: 0;
+  padding-left: 17px;
+  padding-right: 18px;
+  height: 218px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 }

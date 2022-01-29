@@ -29,3 +29,24 @@
     background-size: cover;
   }
 }
+
+.page-main__map--img {
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 518px;
+  }
+}
+
+.page-main__map--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-main__map--desctop {
+  @media (min-width: @mobile-width-only) and (max-width: 767px) {
+    display: none;
+  }
+}

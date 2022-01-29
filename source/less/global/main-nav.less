@@ -3,4 +3,21 @@
   background-repeat: no-repeat;
   width: 23px;
   height: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
+
+.main-nav--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--desctop {
+  @media (min-width: @mobile-width-only) and (max-width: 767px) {
+    display: none;
+  }
+}
+

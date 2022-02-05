@@ -3,20 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  a {
-    background-color: #ffffff;
-    color: #000000;
-  }
 }
 
 .page-header__logo {
-  height: 56px;
-
   @media (min-width: @tablet-width) {
-    position: relative;
-    left: 30px;
-    top: 15px;
+    position: absolute;
+    left: 342px;
+    top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 505px;
   }
 }
 
@@ -31,5 +28,21 @@
   @media (min-width: @mobile-width-only) and (max-width: 767px) {
     display: none;
     height: 56px;
+  }
+}
+
+.page-header__logo--desctop {
+  @media (min-width: @mobile-width-only) and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.page-header__logo--tablet {
+  @media (min-width: @mobile-width-only) and (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

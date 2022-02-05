@@ -1,10 +1,16 @@
 .site-list {
   margin: 0;
   padding: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 156px 156px 156px 156px 156px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 239px 239px 239px 239px 239px;
     height: 56px;
     align-content: center;
     align-items: center;
@@ -13,4 +19,10 @@
 
 .site-list__item--logo {
   position: relative;
+}
+
+.site-list__item {
+  @media (min-width: @tablet-width) {
+    height: 56px;
+  }
 }

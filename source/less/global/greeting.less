@@ -1,4 +1,5 @@
 .greeting__img {
+  padding-top: 90px;
   width: 282px;
   height: 214px;
 
@@ -8,19 +9,18 @@
   }
 }
 
-.greeting__vector {
-  background-image: url("/img/intro-triangle.svg");
-  background-repeat: no-repeat;
-  height: 57px;
-  width: 100%;
+.greeting--vector {
   margin: 0;
   position: absolute;
-  bottom: -119px;
-  background-size: contain;
+  bottom: 0;
 
   @media (min-width: @tablet-width) {
-    background-image: url("/img/intro-triangle-groose.svg");
-    bottom: -357px;
-    height: 44px;
+    display: none;
   }
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
